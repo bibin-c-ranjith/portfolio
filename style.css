@@ -1,0 +1,269 @@
+
+   *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+   }
+
+   @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald&display=swap');
+
+    
+
+    h1{
+        font-family: 'Bungee Spice', cursive;
+    }
+    .container{
+          width: 100%;
+          height: 100vh;
+          background-color: white;
+          position: relative;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;           /*allign to both ends or give a space between*/
+        width: 85%;
+        margin-left:100px; /*specify the left distance b/w margin*/
+        align-items: center;
+
+    }
+    .logo{
+        width: 100px;
+    }
+    .listitems{
+        display: inline;  /*display contents in line*/
+        list-style: none; /*to remove bullet points in every browser*/
+        margin: 10px 20px;
+        
+
+    }
+    .link{
+        color: black;
+        text-decoration: none; /*to remove the text decoration*/
+        font-weight: bold; 
+
+    }
+    .link:hover{      /*pseudo class*/
+        color: red;
+    }
+    .title{
+        margin-left: 8%;
+        margin-top: 13%;;
+    }
+.titleh1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: orange;
+}
+.cv{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0%;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%);
+    transition: bottom 2s, left 2s;
+}
+.images:hover #shade{
+    bottom: 30px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 13% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+    font-weight:500;
+}
+.about-content{
+    margin-top: 2rem;/*1rem - 16px*/
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem; /*to get a gap between two grids*/
+}
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+.about-details{
+    font-size: 16px;
+    font-weight:400;
+    text-align: justify;
+    font-style: normal;
+}
+.information{
+    margin-top: 1.5rem;
+}
+.info-box{
+    margin-bottom: 1.5rem;
+}
+.info-box span{
+    margin-left: 1.5rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+.skill-img img{
+    width: 80%;
+    border-radius: 1remk;
+    padding-left: 4rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h3 span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+}
+.base-bar1{
+    width: 95%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+
+}
+.base-bar2{
+    width: 85%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+
+}
+.base-bar3{
+    width: 88%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+
+}
+.base-bar4{
+    width: 89%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+
+}
+.icon{
+    margin: 3%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-set {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+   
+}
+.icon-set i {
+    font-size: 30px;
+    color: black;
+}
+.icon-set:hover{
+    background-image: linear-gradient(to top right, red, yellow);
+}
+.icon-set:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+    margin: 3rem 0px;
+}
+footer p{
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0%;
+   
+}
+.up-arrow{
+  margin: 0px 10px 50px 0px;  
+  float: right;
+  background-image: linear-gradient(to top right, red, yellow);
+  border-radius: 30%;
+}
+.up-arrow:hover i{
+    color: white;
+}
